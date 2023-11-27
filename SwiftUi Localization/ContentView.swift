@@ -10,12 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            TextView()
+                .environment(\.locale, Locale.init(identifier: "en"))
+            TextView()
+                .environment(\.locale, Locale.init(identifier: "ja"))
         }
         .padding()
+    }
+}
+
+struct TextView: View {
+    var body: some View {
+        VStack {
+            Text("hello-title")
+        }
     }
 }
 

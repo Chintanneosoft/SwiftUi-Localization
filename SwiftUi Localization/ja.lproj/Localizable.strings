@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SwiftUi Localization
+
+  Created by Neosoft on 27/11/23.
+  
+*/
+
+"hello-title" = "こんにちは世界!";
